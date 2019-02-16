@@ -19,7 +19,6 @@ app.use(express.urlencoded({ extended: false }));//处理application/x-www-form-
 app.use(express.static(path.join(__dirname, 'public')));
 //第三方中间件
 app.use(logger('dev'));
-app.use(logger('combined', {stream : accessLog})); 
 app.use(cookieParser());
 //注册路由
 app.use('/', indexRouter);
