@@ -9,7 +9,6 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-debug("slurp")
 // 设置views存储目录
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
