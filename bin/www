@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('feod:server');
+var debug = require('debug')('prism:server');
 var http = require('http');
 
 /**
