@@ -23,8 +23,7 @@ db.on('close',function(err){
         console.info('数据库连接成功!')
     }
 });
-const dbOptions = {useNewUrlParser: true}
-mongoose.connect(config.dbUrl, dbOptions);
+mongoose.connect(config.dbUrl, config.dbOptions);
 
 
 // BRING IN YOUR SCHEMAS & MODELS
